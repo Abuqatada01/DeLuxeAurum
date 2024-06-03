@@ -13,7 +13,7 @@ import uploadRoutes from "./routes/uploadRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 
 dotenv.config();
-const PORT = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 
 connectDB();
 
@@ -36,4 +36,4 @@ app.get("/api/config/paypal", (req, res) => {
 const __dirname = path.resolve();
 app.use("/uploads", express.static(path.join(__dirname + "/uploads")));
 
-app.listen(PORT, () => console.log(`Server running on port: ${PORT}`));
+app.listen(port, () => console.log(`Server running on port: ${port}`));
