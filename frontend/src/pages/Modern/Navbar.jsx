@@ -77,7 +77,7 @@ export default function Navbar() {
                     to="/"
                     className="text-xl absolute left-11 font-semibold text-green-600"
                   >
-                    Luxe Auram
+                   De Luxe Aurum
                   </Link>
                   <div className="absolute right-3   z-50   left-[11rem]">
                     <button
@@ -86,7 +86,7 @@ export default function Navbar() {
                     >
                       {userInfo ? (
                         <span className="text-black   rounded-md text-bold absolute right-2 ">
-                          <UserIcon className=" p-1 bg-[#c7c7c7] rounded-full h-8 ml-[5rem]"/>
+                          <UserIcon className=" p-1 bg-[#ebe9e9]  border-1 rounded-full mt-2 h-8 ml-[5rem]"/>
                           {/* {userInfo.username} */}
                         </span>
                       ) : (
@@ -122,7 +122,7 @@ export default function Navbar() {
                       >
                         {userInfo.isAdmin && (
                           <>
-                            <li className="hover:bg-white">
+                            <li className="hover:bg-green-600">
                               <Link
                                 to="/admin/dashboard"
                                 className="block px-4 py-2 hover:bg-gray-100"
@@ -130,7 +130,7 @@ export default function Navbar() {
                                 Dashboard
                               </Link>
                             </li>
-                            <li className="hover:bg-white">
+                            <li className="hover:bg-green-600">
                               <Link
                                 to="/admin/productlist"
                                 className="block px-4 py-2 hover:bg-gray-100"
@@ -138,7 +138,7 @@ export default function Navbar() {
                                 Products
                               </Link>
                             </li>
-                            <li className="hover:bg-white">
+                            <li className="hover:bg-green-600">
                               <Link
                                 to="/admin/categorylist"
                                 className="block px-4 py-2 hover:bg-gray-100"
@@ -146,7 +146,7 @@ export default function Navbar() {
                                 Category
                               </Link>
                             </li>
-                            <li className="hover:bg-white">
+                            <li className="hover:bg-green-600">
                               <Link
                                 to="/admin/orderlist"
                                 className="block px-4 py-2 hover:bg-gray-100"
@@ -184,14 +184,14 @@ export default function Navbar() {
                       </ul>
                     )}
                     {!userInfo && (
-                      <ul>
-                        <li>
+                      <div className="p-0">
+                        <div className="flex items-center">
                           <Link
                             to="/login"
-                            className="flex items-center text-black text-semibold mt-5 transition-transform transform hover:translate-x-2"
+                            className="flex items-center xsm:ml-[6rem] xsm:mb-4 text-black text-semibold mt-5 transition-transform transform hover:translate-x-2"
                           >
                             <AiOutlineLogin
-                              className="mr-2 text-black mt-[4px]"
+                              className="mr-2 text-black mb"
                               size={26}
                             />
                             <span className="hidden nav-item-name">LOGIN</span>
@@ -199,15 +199,15 @@ export default function Navbar() {
 
                           <Link
                             to="/register"
-                            className="flex items-center text-black mt-5 transition-transform transform hover:translate-x-2"
+                            className="flex items-center  xsm:ml-[4px] text-black lg:mt-5 transition-transform transform hover:translate-x-2"
                           >
                             <AiOutlineUserAdd size={26} />
                             <span className="hidden nav-item-name">
                               REGISTER
                             </span>
                           </Link>
-                        </li>
-                      </ul>
+                        </div>
+                      </div>
                     )}
                   </div>
                 </div>

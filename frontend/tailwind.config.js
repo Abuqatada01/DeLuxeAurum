@@ -7,8 +7,7 @@ export default {
       input: `0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)`,
     },},
   },
-  plugins: [ require('@tailwindcss/aspect-ratio'),
-   require('@tailwindcss/aspect-ratio'),],
+  plugins: [ require('@tailwindcss/aspect-ratio'),],
   theme: {
     screens: {
       xsm:'350px',
@@ -43,6 +42,7 @@ export default {
   green:{
     200:"#2a814d",
     400:"#25a26f",
+    500:"#02590f",
     600:"#02590f"
   },
       'metal': '#565584',
