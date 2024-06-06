@@ -12,8 +12,8 @@ export default defineConfig({
 
   server: {
     proxy: {
-      "/api/": "http://localhost:5000",
-      "/uploads/": "http://localhost:5000",
+      "/api/": "https://deluxeaurum.onrender.com",
+      "/uploads/": "https://deluxeaurum.onrender.com",
     },
   },
 })
